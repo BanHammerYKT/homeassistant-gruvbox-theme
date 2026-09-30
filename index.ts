@@ -43,14 +43,14 @@ build({
   ...singleColourEntry(neutral.aqua, "ha-color-aqua"),
   ...singleColourEntry(neutral.orange, "ha-color-orange"),
   // Primary
-  ...singleColourEntry(neutral.purple, "ha-color-primary"),
+  ...singleColourEntry(neutral.orange, "ha-color-primary"),
   // Neutral
   ...mapKeys(neutrals, (k, _v) => `ha-color-neutral-${k}`),
 
   // Color moes
   light: {
     // Accents
-    primaryColor: neutral.purple,
+    primaryColor: neutral.orange,
     accentColor: neutral.green,
     // Typography
     primaryTextColor: neutrals["10"]!, // Used for rgb downstream
@@ -71,7 +71,7 @@ build({
   },
   dark: {
     // Accents
-    primaryColor: neutral.purple,
+    primaryColor: neutral.orange,
     accentColor: neutral.green,
     // Typography
     primaryTextColor: neutrals["90"]!, // Used for rgb downstream
@@ -86,7 +86,7 @@ build({
     cardBackgroundColor: monochrome.dark1, // Cards
     // Sidebar detail
     sidebarIconColor: "var(--ha-color-blue-80)",
-    sidebarSelectedIconColor: "var(--ha-color-purple-60)",
+    sidebarSelectedIconColor: "var(--ha-color-orange-60)",
     // Extra
     appHeaderEditBackgroundColor: "var(--ha-color-blue-10)",
   }
